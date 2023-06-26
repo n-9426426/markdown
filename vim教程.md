@@ -8,6 +8,7 @@
 [api](#帮助信息)
 ## 配置
 ```
+// .vimrc配置文件中需要删除所有注释
 // 显示行号
 set number
 // 编码
@@ -20,11 +21,11 @@ filetype on
 filetype indent on
 filetype plugin on
 // 可视化下兼容鼠标
-set mouse = a
+set mouse=a
 // 缩进
-set tabstop = 4
-set shiftwidth = 4
-set softtabstop = 4
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 // 空行末显示$
 set list
 set listchars=tab:▸\ ,trail:▫
@@ -37,11 +38,11 @@ set autoindent
 // 设置字体
 set guifont=Powerline_Consolas:h12:cANSI:qDRAFT
 // 隐藏滚动条
-set guioptions -= m
-set guioptions -= T
-set guioptions -= r
-set guioptions -= b
-set guioptions -= L
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=b
+set guioptions-=L
 // 代码折叠
 set foldmethod=indent
 // 突出显示选中字符所在列
@@ -175,7 +176,9 @@ set clipboard=unnamed
 |    R    |              进入替换模式，直至 ESC 离开               |
 |    s    | 替换字符（删除光标处字符，并进入插入模式，前可接数量） |
 |    S    |    替换行（删除当前行，并进入插入模式，前可接数量）    |
+|   gcc   |              vscode中为注释，其他为cc命令              |
 |   cc    |      改写当前行（删除当前行并进入插入模式），同 S      |
+|   ce    |              从光标处删除本单词之后的字母并开始修改              | 
 |   cw    |                改写光标开始处的当前单词                |
 |   ciw   |                   改写光标所处的单词                   |
 |   caw   |   改写光标所处的单词，并且包括前后空格（如果有的话）   |
